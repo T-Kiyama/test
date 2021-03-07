@@ -30,10 +30,6 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.3
-      - name: Get pgsql driver
-        run: ./configure --with-pdo-pgsql
-      - name: check driver
-        run: php -m|grep pdo
       - name: Install Dependencies
         run: composer install
         working-directory: /home/runner/work/test/test/laravel
