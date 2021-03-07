@@ -37,7 +37,7 @@ jobs:
         run: php artisan key:generate
         working-directory: /home/runner/work/test/test/laravel
       - name: Install Driver
-        run: sudo apt-get install php7.3-sqlite3
+        run: sudo apt-get install php-sqlite3
         working-directory: /home/runner/work/test/test/laravel
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
