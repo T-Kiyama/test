@@ -31,7 +31,7 @@ jobs:
         with:
           php-version: 7.3
       - name: Get pgsql driver
-        run: sudo apt-get install php-pdo_pgsql
+        run: php -m|grep pdo
       - name: Install Dependencies
         run: composer install
         working-directory: /home/runner/work/test/test/laravel
