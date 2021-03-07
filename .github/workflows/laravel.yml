@@ -32,6 +32,7 @@ jobs:
           php-version: 7.3
       - name: Get pgsql driver
         run: sudo apt-get install php-pgsql
+      - name: check driver
         run: php -m|grep pdo
       - name: Install Dependencies
         run: composer install
