@@ -30,7 +30,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.3
-      - name: Copy .env
+      - name: Get pgsql driver
         run: yum install --enablerepo=remi-php72 php-pdo php-pgsql
       - name: Install Dependencies
         run: composer install
