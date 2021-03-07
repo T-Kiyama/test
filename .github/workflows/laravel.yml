@@ -31,7 +31,7 @@ jobs:
         with:
           php-version: 7.3
       - name: Get pgsql driver
-        run: yum install --enablerepo=remi-php72 php-pdo php-pgsql
+        run: apt get install php-pdo php-pgsql
       - name: Install Dependencies
         run: composer install
         working-directory: /home/runner/work/test/test/laravel
